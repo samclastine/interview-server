@@ -12,7 +12,7 @@ dotenv.config();
 const model = new ChatOpenAI({
   model: "gpt-4o", // or "gpt-4-32k", "gpt-3.5-turbo", etc.
   temperature: 0,
-  apiKey: "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"
+  apiKey: "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"
 });
 
 // ------------------------------------
