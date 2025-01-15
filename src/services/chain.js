@@ -4,23 +4,14 @@ import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatOpenAI } from "@langchain/openai";
 import dotenv from 'dotenv';
 
-// Load environment variables
 dotenv.config();
-// ------------------------------------
-// 1) Initialize model
-// ------------------------------------
+
 const model = new ChatOpenAI({
-  model: "gpt-4o", // or "gpt-4-32k", "gpt-3.5-turbo", etc.
+  model: "gpt-4o", 
   temperature: 0,
   apiKey: process.env.OPENAI_API_KEY
 });
 
-// ------------------------------------
-// 2) Define Prompt Templates for the Extraction Layer
-//    a) DDC Prompt
-//    b) KPC Prompt
-//    c) OBS Prompt
-// ------------------------------------
 const ddcExtractionPrompt = PromptTemplate.fromTemplate(`
 DDC Prompt:
 

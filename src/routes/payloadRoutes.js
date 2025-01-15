@@ -26,12 +26,10 @@ DON'TS
 // Use CORS Middleware
 router.use(cors());
 
-// Example route for getting all users
 router.get('/', (req, res) => {
     res.json({ message: 'Payload received' });
 });
 
-// Example route for creating a user
 router.post('/', async (req, res) => {
     const { script } = req.body;
     const result = await runFullEvaluation({
