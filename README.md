@@ -85,12 +85,8 @@ For a full list of dependencies, refer to the `package.json` file.
 
 ## Development
 
-To contribute or modify this project:
-
-1. Fork the repository and clone it locally.
-2. Ensure you meet the requirements listed above.
-3. Follow the installation steps.
-4. Use the development scripts:
+1. Follow the installation steps.
+2. Use the development scripts:
    - **Run the server**: `npm run dev`
 
 ---
